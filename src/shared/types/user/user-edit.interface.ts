@@ -1,4 +1,4 @@
-import { Color } from '@services';
+import { Color } from '@types';
 
 export interface UserEdit {
 	username: string;

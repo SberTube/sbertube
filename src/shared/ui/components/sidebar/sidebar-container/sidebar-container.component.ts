@@ -25,8 +25,8 @@ import { MyHammerConfig } from '../../../../../app/app.config';
 export class SidebarContainerComponent {
 	@Input() template!: TemplateRef<unknown>;
 
-	private elRef = inject(ElementRef<HTMLDivElement>);
-	private ngZone = inject(NgZone);
+	private _elRef = inject(ElementRef<HTMLDivElement>);
+	private _ngZone = inject(NgZone);
 
 	@HostListener('click')
 	onClick() {
@@ -34,10 +34,10 @@ export class SidebarContainerComponent {
 	}
 
 	private get container() {
-		return this.elRef.nativeElement.querySelector('.sidebar') as HTMLDivElement;
+		return this._elRef.nativeElement.querySelector('.sidebar') as HTMLDivElement;
 	}
 	protected close() {
 		this.container.classList.add('sidebar-out');
-		this.ngZone.runOutsideAngular(() => setTimeout(() => this.elRef.nativeElement.remove(), 200));
+		this._ngZone.runOutsideAngular(() => setTimeout(() => this._elRef.nativeElement.remove(), 200));
 	}
 }

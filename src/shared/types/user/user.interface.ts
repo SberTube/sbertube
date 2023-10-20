@@ -1,4 +1,4 @@
-import { CommentResponse, VideoResponse } from '@services';
+import { CommentResponse, VideoResponse } from '@types';
 
 export interface User {
 	email: string;

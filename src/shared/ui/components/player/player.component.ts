@@ -43,9 +43,9 @@ import { VideoDirective } from '@shared/ui/directives';
 })
 export class PlayerComponent implements OnDestroy {
 	@ViewChild('myMedia', { static: true, read: ElementRef<HTMLVideoElement> })
-	private media!: ElementRef<HTMLVideoElement>;
+	private _media!: ElementRef<HTMLVideoElement>;
 	protected api = inject(VgAPI);
-	private aoiSub$!: Subscription;
+	private _apiSub$!: Subscription;
 
 	@Input({ required: true }) size: 'sm' | 'lg' | 'full' | 'md' = 'lg';
 	@Input() source = '';
@@ -54,14 +54,14 @@ export class PlayerComponent implements OnDestroy {
 
 	public onPlayerReady(api: VgAPI) {
 		this.api = api;
-		this.aoiSub$ = this.api.getDefaultMedia().subscriptions.loadedMetadata.subscribe(this.playVideo.bind(this));
+		this._apiSub$ = this.api.getDefaultMedia().subscriptions.loadedMetadata.subscribe(this.playVideo.bind(this));
 	}
 
 	public playVideo() {
 		this.api.play();
 	}
 	ngOnDestroy() {
-		this.aoiSub$.unsubscribe();
+		this._apiSub$.unsubscribe();
 	}
 
 	getDuration(event: number) {

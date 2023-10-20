@@ -15,7 +15,7 @@ export class SidebarRef {
 	private _afterCreated = new Subject<ObservableData<unknown> | null>();
 	private _beforeCreated = new Subject<ObservableData<unknown> | null>();
 
-	private _component!: ComponentRef<unknown>;
+	private _component!: ComponentRef<ComponentSettings>;
 	private _data!: ComponentData;
 
 	public open(component: ComponentType, settings: ComponentSettings, data?: ComponentData) {
@@ -26,7 +26,10 @@ export class SidebarRef {
 		return new Observable((subscriber) => {
 			const injector = Injector.create([{ provide: COMPONENT_DATA, useValue: this._data }]);
 
-			const componentRef: ComponentRef<unknown> = this.portal.createPortal(component, injector);
+			const componentRef: ComponentRef<ComponentSettings> = this.portal.createPortal(
+				component,
+				injector,
+			) as ComponentRef<ComponentSettings>;
 			this._component = componentRef;
 
 			this.getInstanceAndAssignData(componentRef, settings);

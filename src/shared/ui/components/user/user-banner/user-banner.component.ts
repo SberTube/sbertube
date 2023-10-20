@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { colorParser, User } from '@services';
+import { colorParser } from '@services';
+import { User } from '@types';
 const makeColorString = (v: string) => {
 	const color = colorParser(v);
 	return `rgb(${color.r}, ${color.g}, ${color.b})`;

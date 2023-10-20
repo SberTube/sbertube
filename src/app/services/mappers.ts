@@ -1,4 +1,4 @@
-import { User, UserResponse, Comment, CommentResponse } from './types';
+import { User, UserResponse, Comment, CommentResponse } from '@types';
 
 export const mapUser = (user: UserResponse): User => {
 	return user.user as User;
