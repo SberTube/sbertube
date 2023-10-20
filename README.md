@@ -16,7 +16,7 @@
 >**Note**
 > if you need ignore you some files - add this in .gitignore file
 
->**Required**
+>**Important**
 > Backend interaction needed link: https://github.com/deprecated-guy/sbertube-api
 
 
