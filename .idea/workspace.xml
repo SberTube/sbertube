@@ -5,156 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29704803-8366-4bf3-84e4-47fb5aa5baa1" name="Changes" comment="feat(angular): create welcome component&#10;* create welcome component&#10;* add stater-kit services and ui components">
-      <change afterPath="$PROJECT_DIR$/.husky/commit-msg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.husky/pre-commit" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/component/welcome-page/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/component/welcome-page/welcome-page.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/component/welcome-page/welcome-page.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/component/welcome-page/welcome-page.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/component/welcome-page/welcome-page.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/auth.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/comment.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/dislike.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/dislike.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/helpers/color.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/helpers/format-data.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/helpers/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/helpers/random-color.helper.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/http-route.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/like.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/like.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/mappers.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/user.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/video-loader.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interceptors/auth.interceptor.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interceptors/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/guards/auth.guard.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/guards/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/guards/user-auth.guard.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/services/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/services/persistence.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/types/backend-errors.type.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/types/comment/comment-input.type.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/types/comment/comment-response.type.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/types/comment/comment.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/types/comment/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/types/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/types/like/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/types/like/like-request.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/types/like/like-response.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/types/register-response.type.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/types/user/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/types/user/user-edit.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/types/user/user-login.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/types/user/user-register.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/types/user/user-response.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/types/user/user.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/types/video/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/types/video/video-response.type.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/types/video/video.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/animations/errorAnimation.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/animations/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/control/control.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/control/control.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/control/control.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/control/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/hint/hint.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/hint/hint.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/hint/hint.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/hint/hint.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/hint/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/loaders/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/loaders/skeleton-loader/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/loaders/skeleton-loader/skeleton-loader.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/loaders/skeleton-loader/skeleton-loader.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/loaders/skeleton-loader/skeleton-loader.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/modal/dialog-ref.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/modal/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/modal/window/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/modal/window/window.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/modal/window/window.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/modal/window/window.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/player/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/player/player.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/player/player.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/player/player.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/player/player.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/server-errors/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/server-errors/server-errors.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/server-errors/server-errors.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/server-errors/server-errors.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/sidebar/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/sidebar/sidebar-container/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/sidebar/sidebar-container/sidebar-container.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/sidebar/sidebar-container/sidebar-container.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/sidebar/sidebar-container/sidebar-container.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/sidebar/sidebar-ref.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/sidebar/sidebar/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/sidebar/sidebar/sidebar.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/sidebar/sidebar/sidebar.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/sidebar/sidebar/sidebar.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/sidebar/token/COMPONENT_DATA.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/sidebar/types/component-data.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/sidebar/types/component-initial-data.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/sidebar/types/component-settings.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/sidebar/types/component-type.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/sidebar/types/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/sidebar/types/observable-data.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/snackbar/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/snackbar/snackbar-ref.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/snackbar/snackbar/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/snackbar/snackbar/snackbar.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/snackbar/snackbar/snackbar.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/snackbar/snackbar/snackbar.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/snackbar/types/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/snackbar/types/snackbar-options.type.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/toast/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/toast/toast-ref.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/toast/toast/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/toast/toast/toast.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/toast/toast/toast.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/toast/toast/toast.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/toast/toast/toast.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/toast/types/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/toast/types/toast-settings.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/user/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/user/user-avatar/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/user/user-avatar/user-avatar.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/user/user-avatar/user-avatar.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/user/user-avatar/user-avatar.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/user/user-banner/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/user/user-banner/user-banner.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/user/user-banner/user-banner.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/components/user/user-banner/user-banner.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/directives/hint.directive.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/directives/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/directives/show-password.directive.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/directives/video.directive.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.stylelintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.stylelintrc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commitlint.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/commitlint.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.spec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +22,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -184,27 +34,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "js.linters.configure.manually.selectedeslint": "true",
-    "last_opened_file_path": "/home/ngdev/Desktop/sbertube/sbertube-2/src/shared/ui/directives",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "/home/ngdev/Desktop/sbertube/sbertube-2/node_modules/eslint",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/home/ngdev/Desktop/sbertube/sbertube-2/node_modules/prettier",
-    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
-    "ts.external.directory.path": "/home/ngdev/Desktop/sbertube/sbertube-2/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/ngdev/Desktop/sbertube/sbertube-2/src/shared/ui/directives&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;/home/ngdev/Desktop/sbertube/sbertube-2/node_modules/eslint&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/home/ngdev/Desktop/sbertube/sbertube-2/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/ngdev/Desktop/sbertube/sbertube-2/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/shared/ui/directives" />
@@ -251,7 +101,8 @@
       <workItem from="1697802020356" duration="3928000" />
       <workItem from="1697805962420" duration="1599000" />
       <workItem from="1697807575469" duration="339000" />
-      <workItem from="1697809359412" duration="13121000" />
+      <workItem from="1697809359412" duration="13603000" />
+      <workItem from="1697823494082" duration="498000" />
     </task>
     <task id="LOCAL-00001" summary="feat(git *  angular): project generated&#10;* generate project&#10;* initialized starter environment">
       <created>1697804616999</created>
@@ -288,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1697809672727</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat(angular): create welcome component&#10;* create welcome component&#10;* add stater-kit services and ui components">
+      <created>1697822527666</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1697822527666</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
