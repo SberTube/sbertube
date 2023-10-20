@@ -1,5 +1,21 @@
 # For contributors
 
+>**Note**
+> I install TailwindCSS for you. use tailwind if you need it.
+
+>**Note**
+> if you need ignore you some files - add this in .gitignore file
+
+>**Required**
+> Backend interaction needed link: https://github.com/deprecated-guy/sbertube-api
+
+
+> **Note**
+> read those guideline: https://angular.io/guide/styleguide
+
+
+
+
 ## Global rules:
 1. if you create private field, use the underscore syntax
 2. do not use public keyword in fields naming, use protected keyword
@@ -24,12 +40,12 @@ I will set up based CI script, but you can modify him.
 > if you wand to extend portal... You can do this.. Create outlets and other what you want. 
 
 
+> **Note**
+> git hooks is installed, eslint, lint-staged, prettier and style lint is installed. You can modify files for you best experience.
 
 
 # Thanks for watching this necessary rules and helping me with creating this project.
 
-> **Note**
-> git hooks is installed, eslint, lint-staged, prettier and style lint is installed. You can modify files for you best experience.
 
 # My based setting of eslint
 
@@ -38,19 +54,6 @@ I will set up based CI script, but you can modify him.
 # Based prettier settings
 
 > open .prettierrc
-
->**Note**
-> I install TailwindCSS for you. use tailwind if you need it.
-
->**Note**
-> if you need ignore you some files - add this in .gitignore file
-
->**Required**
-> Backend interaction needed link: https://github.com/deprecated-guy/sbertube-api
-
-
-> **Note**
-> read those guideline: https://angular.io/guide/styleguide
 
 
 ```typescript

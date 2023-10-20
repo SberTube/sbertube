@@ -12,10 +12,15 @@
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
         "plugin:@angular-eslint/recommended",
-        "plugin:@angular-eslint/template/process-inline-templates"
+        "plugin:@angular-eslint/template/process-inline-templates",
+				"prettier"
       ],
       "rules": {
-        "@angular-eslint/directive-selector": [
+				"indent": [
+					"error", "tab", { "offsetTernaryExpressions": true }
+				],
+				"no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
+				"@angular-eslint/directive-selector": [
           "error",
           {
             "type": "attribute",
@@ -30,7 +35,12 @@
             "prefix": "app",
             "style": "kebab-case"
           }
-        ]
+        ],
+				"prettier/prettier": [
+					"error",{
+						"tabWidth": 2
+					}
+				]
       }
     },
     {
@@ -39,7 +49,8 @@
       ],
       "extends": [
         "plugin:@angular-eslint/template/recommended",
-        "plugin:@angular-eslint/template/accessibility"
+        "plugin:@angular-eslint/template/accessibility",
+				"plugin:prettier/recommended"
       ],
       "rules": {}
     }
