@@ -14,6 +14,6 @@ export class HintComponent {
 
 	@HostListener('mouseenter')
 	onMouseEnter() {
-		console.log('enter');
+		return 1;
 	}
 }

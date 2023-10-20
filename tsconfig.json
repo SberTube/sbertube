@@ -30,6 +30,8 @@
 			"@ui": ["./src/shared/ui"],
 			"@types": ["./src/shared/types"],
 			"@interceptors": ["./src/interceptors"],
+			"@site/ui": ["./src/app/components/ui"],
+			"@services": ["./src/app/services"],
 		}
 	},
   "angularCompilerOptions": {

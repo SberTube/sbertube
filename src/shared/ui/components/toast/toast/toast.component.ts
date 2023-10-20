@@ -19,27 +19,27 @@ import { CommonModule } from '@angular/common';
 	changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ToastComponent implements OnInit, OnDestroy {
-	private elRef = inject(ElementRef<HTMLDivElement>);
-	private ngZone = inject(NgZone);
-	private animTimer!: NodeJS.Timeout;
-	private removeTimer!: NodeJS.Timeout;
+	private _elRef = inject(ElementRef<HTMLDivElement>);
+	private _ngZone = inject(NgZone);
+	private _animTimer!: unknown;
+	private _removeTimer!: unknown;
 	@Input() type: 'success' | 'error' | 'warning' = 'warning';
 	@Input() text = '';
 	@Input() status = '';
 
 	private get container() {
-		return this.elRef.nativeElement.querySelector('.toast') as HTMLDivElement;
+		return this._elRef.nativeElement.querySelector('.toast') as HTMLDivElement;
 	}
 
 	ngOnInit() {
-		this.ngZone.runOutsideAngular(() => {
-			this.animTimer = setTimeout(() => this.container.classList.add('.toast-out'), 300);
-			this.removeTimer = setTimeout(() => this.container.remove(), 400);
+		this._ngZone.runOutsideAngular(() => {
+			this._animTimer = setTimeout(() => this.container.classList.add('toast-out'), 500);
+			this._removeTimer = setTimeout(() => this._elRef.nativeElement.remove(), 700);
 		});
 	}
 
 	ngOnDestroy() {
-		clearTimeout(this.animTimer);
-		clearTimeout(this.removeTimer);
+		clearTimeout(this._animTimer as number);
+		clearTimeout(this._removeTimer as number);
 	}
 }

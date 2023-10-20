@@ -33,7 +33,7 @@
 	const routes: Routes = [
 	{
         path: '',
-		loadComonent: () => import('./components/welcome-page/welcome-page.component.ts').then(c => c.WelcomePageComponent), 
+		loadComonent: () => import('./components/welcome-page/welcome-page.components.ts').then(c => c.WelcomePageComponent), 
 		// or if you nned load child routes
 		// loadChildren: () => import('./components/routes').then(r => r.routes), 
 		// use canActivate: [guardName] if you need the make it guarded

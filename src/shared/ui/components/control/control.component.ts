@@ -16,7 +16,7 @@ import { ShowPasswordDirective } from '@ui';
 function convertToPx(v: number) {
 	return v + 'px';
 }
-// eslint-disable-next-line @angular-eslint/template/interactive-supports-focus
+
 @Component({
 	selector: 'sb-control',
 	standalone: true,
@@ -58,7 +58,11 @@ function convertToPx(v: number) {
 })
 export class ControlComponent implements ControlValueAccessor {
 	@ViewChild('input', { read: ElementRef<HTMLInputElement> })
-	private input!: ElementRef<HTMLInputElement>;
+	private _input!: ElementRef<HTMLInputElement>;
+	private _elRef = inject(ElementRef);
+	private _hidePass = false;
+	private _renderer = inject(Renderer2);
+	public _value = '';
 
 	@Input() placeholder = '';
 
@@ -82,13 +86,7 @@ export class ControlComponent implements ControlValueAccessor {
 
 	@Input() control!: AbstractControl;
 
-	private elRef = inject(ElementRef);
-	private hidePass = false;
-	private renderer = inject(Renderer2);
-	public value = '';
-
-	@HostBinding('attr.aria-name')
-	get name() {
+	@HostBinding('attr.aria-name') get name() {
 		return 'sb-control';
 	}
 
@@ -108,29 +106,29 @@ export class ControlComponent implements ControlValueAccessor {
 	}
 
 	setDisabledState(isDisabled: boolean): void {
-		this.renderer.setProperty(this.elRef.nativeElement, 'disabled', isDisabled);
+		this._renderer.setProperty(this._elRef.nativeElement, 'disabled', isDisabled);
 	}
 
 	writeValue(obj: string): void {
-		this.value = obj;
+		this._value = obj;
 		this.control.markAsDirty();
 	}
 
 	protected updateValue(e: Event) {
-		this.value = (e.target as HTMLInputElement).value;
+		this._value = (e.target as HTMLInputElement).value;
 		this.onChange((e.target as HTMLInputElement).value);
 		this.onTouch();
 	}
 
 	protected onClick() {
 		if (this.control) this.control.setValue('');
-		this.value = '';
-		this.input.nativeElement.value = '';
+		this._value = '';
+		this._input.nativeElement.value = '';
 	}
 
 	handleClick(event: MouseEvent) {
 		event.preventDefault();
 		event.stopPropagation();
-		this.hidePass = !this.hidePass;
+		this._hidePass = !this._hidePass;
 	}
 }

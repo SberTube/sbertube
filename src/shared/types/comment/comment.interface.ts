@@ -1,6 +1,4 @@
-import { UserResponse } from '../user/user-response.interface';
-import { VideoResponse } from '../video/video-response.type';
-import { Like } from '../like/like-response.interface';
+import { UserResponse, VideoResponse, Like } from '@types';
 
 export interface Comment {
 	id: number;

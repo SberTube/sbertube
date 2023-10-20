@@ -12,13 +12,13 @@ const transformToPx = (v: number) => v + 'px';
 	changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class WindowComponent {
-	private elRef = inject(ElementRef);
-	protected state = 'closed';
-	private ngZone = inject(NgZone);
-	public data = inject<ComponentInitialData>(COMPONENT_DATA);
+	private _elRef = inject(ElementRef);
+	private _ngZone = inject(NgZone);
+	protected data = inject<ComponentInitialData>(COMPONENT_DATA);
 	private get container() {
-		return this.elRef.nativeElement.querySelector('.dialog') as HTMLDivElement;
+		return this._elRef.nativeElement.querySelector('.dialog') as HTMLDivElement;
 	}
+
 	@Input({ transform: (v: number) => transformToPx(v) }) width = 200;
 	@Input({ transform: (v: number) => transformToPx(v) }) height = 200;
 	@Input() template!: TemplateRef<unknown>;
@@ -28,7 +28,7 @@ export class WindowComponent {
 	close() {
 		this.container.classList.add('slide-to-top');
 		this.container.addEventListener('animationend', () => {
-			this.ngZone.runOutsideAngular(() => setTimeout(() => this.elRef.nativeElement.remove(), 0));
+			this._ngZone.runOutsideAngular(() => setTimeout(() => this._elRef.nativeElement.remove(), 0));
 		});
 	}
 }

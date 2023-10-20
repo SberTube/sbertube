@@ -14,7 +14,7 @@ export class Portal {
 		const componentRef = this.vcr.createComponent(componentType, { injector });
 		this.componentRefs.push(componentRef);
 		this.vcr.insert(componentRef.hostView);
-		this.appRef.attachView(componentRef.hostView);
+		// this.appRef.attachView(componentRef.hostView);
 		return componentRef;
 	}
 

@@ -1,6 +1,4 @@
 export * from './auth.service';
-export * from './persistence.service';
-export * from './types';
 export * from './helpers';
 export * from './user.service';
 export * from './mappers';

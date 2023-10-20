@@ -1,2 +1,2 @@
-import { Comment } from '@services';
+import { Comment } from '@types';
 export type CommentResponse = { comment: Comment };

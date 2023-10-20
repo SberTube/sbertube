@@ -1,13 +1,17 @@
 import { ChangeDetectionStrategy, Component, inject, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { colorParser, User } from '@services';
-import { SkeletonLoaderComponent } from '../../loaders';
+import { colorParser } from '@services';
+import { SkeletonLoaderComponent } from '@ui';
+import { User } from '@types';
 import { IS_MOBILE } from '@di';
+
 const makeAsPx = (v: number) => v + 'px';
+
 const makeColorString = (v: string) => {
 	const color = colorParser(v);
 	return `rgb(${color.r}, ${color.g}, ${color.b})`;
 };
+
 @Component({
 	selector: 'sb-user-avatar',
 	standalone: true,
