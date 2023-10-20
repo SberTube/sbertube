@@ -3,18 +3,28 @@
 	"plugins": ["stylelint-order"],
 	"processors": ["scss", "less"],
 	"rules": {
+		"at-rule-no-unknown": [
+			true,
+			{
+				"ignoreAtRules": [
+					"tailwind",
+					"apply",
+					"variants",
+					"responsive",
+					"screen"
+				]
+			}
+		],
 		"selector-pseudo-element-colon-notation": "single",
-		"at-rule-empty-line-before": "never",
-		"no-descending-specificity": null,
+		"rule-empty-line-before": null,
+		"declaration-empty-line-before": null,
+		"declaration-block-no-redundant-longhand-properties": null,
+		"at-rule-empty-line-before": null,
 		"order/properties-order": [
-			"height",
-			"top",
-			"color",
-			"padding",
-			"background",
-			"margin",
-			"overflow-x",
-			"transform"
+			[],
+			{
+				"unspecified": "ignore"
+			}
 		]
 	}
 }

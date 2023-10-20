@@ -3,7 +3,8 @@
   "ignorePatterns": [
     "projects/**/*"
   ],
-  "overrides": [
+	"plugins": ["unused-imports"],
+	"overrides": [
     {
       "files": [
         "*.ts"
@@ -20,11 +21,18 @@
 					"error", "tab", { "offsetTernaryExpressions": true }
 				],
 				"no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
-				"@angular-eslint/directive-selector": [
+				"@typescript-eslint/no-empty-function": "off",
+				"@angular-eslint/template/interactive-supports-focus": "off","no-unused-vars": "off", // or "@typescript-eslint/no-unused-vars": "off",
+				"unused-imports/no-unused-imports": "error",
+				"unused-imports/no-unused-vars": [
+					"warn",
+					{ "vars": "all", "varsIgnorePattern": "^_", "args": "after-used", "argsIgnorePattern": "^_" }
+				],
+			"@angular-eslint/directive-selector": [
           "error",
           {
             "type": "attribute",
-            "prefix": "app",
+            "prefix": "sb",
             "style": "camelCase"
           }
         ],
@@ -32,7 +40,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "app",
+            "prefix": "sb",
             "style": "kebab-case"
           }
         ],
@@ -44,15 +52,23 @@
       }
     },
     {
-      "files": [
-        "*.html"
-      ],
-      "extends": [
-        "plugin:@angular-eslint/template/recommended",
-        "plugin:@angular-eslint/template/accessibility",
-				"plugin:prettier/recommended"
-      ],
-      "rules": {}
+			"files": [
+				"*.html"
+			],
+			"plugins": [
+				"html",
+				"prettier"
+			],
+			"extends": [
+				"plugin:@angular-eslint/template/recommended",
+				"plugin:@angular-eslint/template/accessibility",
+				"plugin:prettier/recommended",
+				"prettier"
+			],
+      "rules": {
+				"prettier/prettier": ["off"],
+				"@angular-eslint/template/click-events-have-key-events": "off"
+			}
     }
   ]
 }

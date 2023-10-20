@@ -1,5 +1,15 @@
 # For contributors
 
+>**Important**
+> It is the based starter kit for creating.
+
+>**Important**
+> Wee must crete beautiful candy from this starter-kit
+
+>**Note**
+> check the welcome.
+
+
 >**Note**
 > I install TailwindCSS for you. use tailwind if you need it.
 
@@ -13,7 +23,23 @@
 > **Note**
 > read those guideline: https://angular.io/guide/styleguide
 
+> **Note**
+> I will add the base ui components. Use this with brain
 
+>**Important**
+> if you want to create routing, make this lazy and use guards, which contains in guards directory.
+
+```typescript
+	const routes: Routes = [
+	{
+        path: '',
+		loadComonent: () => import('./components/welcome-page/welcome-page.component.ts').then(c => c.WelcomePageComponent), 
+		// or if you nned load child routes
+		// loadChildren: () => import('./components/routes').then(r => r.routes), 
+		// use canActivate: [guardName] if you need the make it guarded
+	}
+]
+```
 
 
 ## Global rules:

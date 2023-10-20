@@ -8,21 +8,24 @@
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss",
-          "standalone": true
-        },
+          "standalone": true,
+					"changeDetection": "Default",
+					"prefix": "sb"
+				},
         "@schematics/angular:directive": {
-          "standalone": true
-        },
+          "standalone": true,
+					"prefix": "sb"
+				},
         "@schematics/angular:pipe": {
-          "standalone": true
+          "standalone": true,
         }
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "sb",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-devkit/build-angular:browser-esbuild",
           "options": {
             "outputPath": "dist/sbertube-2",
             "index": "src/index.html",

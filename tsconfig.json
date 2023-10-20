@@ -25,8 +25,11 @@
     ],
 		"paths": {
 			"@cdk": ["./src/cdk"],
-			"@shared/*": ["./shared/*"],
-			"@di": ["./shared/di"],
+			"@shared/*": ["./src/shared/*"],
+			"@di": ["./src/shared/di"],
+			"@ui": ["./src/shared/ui"],
+			"@types": ["./src/shared/types"],
+			"@interceptors": ["./src/interceptors"],
 		}
 	},
   "angularCompilerOptions": {
